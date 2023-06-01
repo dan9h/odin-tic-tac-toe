@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>The Odin Project: Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="board" id="js-board">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      <div class="status">Player <span id="js-marker">X</span>&apos;s Turn</div>
+    </main>
+
+    <dialog id="js-dialog">
+      <div id="js-winner" class="winner">
+        <span class="winner-x">X</span><span class="winner-o">O</span>
+      </div>
+      <div class="label-winner">Winner</div>
+      <div class="label-draw">Draw</div>
+      <button class="reset-button" id="js-reset">
+        <img src="./images/reset.png" alt="" />
+      </button>
+    </dialog>
+  </body>
+</html>
